@@ -5,14 +5,16 @@ while True:
     try:
         grocery = input()
         firstList.append(grocery)
+
         for item in firstList:
             if item not in secondList:
                 secondList.append(item)
 
-        for i in secondList:
-            i.upper()
+        # Convert items in secondList to uppercase
+        for i in range(len(secondList)):
+            secondList[i] = secondList[i].upper()
 
     except EOFError:
-        print(i)
+        for item in secondList:
+            print(item)
         break
-
