@@ -20,12 +20,12 @@ def get_date():
                 pass  # If conversion fails, continue the loop
 
         # Check if the input is in "Month day, year" format (e.g., September 8, 1636)
-        else:
+        elif "," in date_input:  # Check if there's a comma (for Month day, year format)
             try:
-                # Remove any extra spaces and handle both formats (with or without commas)
-                parts = date_input.replace(",", "").split()
+                # Remove any extra spaces and handle the format "Month day, year"
+                parts = date_input.split()
                 month_name = parts[0]
-                day = int(parts[1])
+                day = int(parts[1].replace(",", ""))  # Remove comma from day
                 year = int(parts[2])
 
                 month = months.index(month_name) + 1  # Get month number
