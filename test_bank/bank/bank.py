@@ -4,9 +4,9 @@ def main():
 
 def value(greeting):
     answer.strip().lower()
-    if answer[0] == "h" and "hello" not in answer:
+    if answer[0] == "h" and answer != "hello":
         return "$20"
-    elif "hello" in answer:
+    elif answer == "hello":
         return "$0"
     else:
         return "$100"
