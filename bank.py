@@ -1,7 +1,15 @@
 def main():
     answer = input("Greeting: ")
-    print()
+    print(greeting)
 
 def value(greeting):
     answer.strip()
-    if answer.startswith("hello")
+    if answer.startswith("h") and not answer.startswith("hello"):
+        return 20
+    elif answer.starswith("hello"):
+        return 0
+    else:
+        return 100
+
+if __name__ == "__main__":
+    main()
