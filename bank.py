@@ -1,5 +1,3 @@
-answer = input("Greeting: ")
-
-new_answer = answer.strip()
-
-if 
+def main():
+    answer = input("Greeting: ")
+    
