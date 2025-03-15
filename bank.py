@@ -1,11 +1,5 @@
 answer = input("Greeting: ")
 
-new_answer = answer.lower().strip()
+new_answer = answer.strip()
 
-
-if "hello" in new_answer:
-    print("$0")
-elif "h" in new_answer[0]:
-    print("$20")
-else:
-    print("$100")
+if 
